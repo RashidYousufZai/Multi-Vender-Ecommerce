@@ -9,6 +9,8 @@ import {
   BestSellingPage,
   EventsPage,
   FAQPage,
+  ProductDetailPage,
+  ProfilePage,
 } from "./Routes";
 import { ToastContainer } from "react-toastify";
 import { useEffect } from "react";
@@ -32,9 +34,11 @@ function App() {
           element={<ActivationPage />}
         />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/product/:name" element={<ProductDetailPage />} />
         <Route path="/best-selling" element={<BestSellingPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/faq" element={<FAQPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
       <ToastContainer
         position="bottom-center"
